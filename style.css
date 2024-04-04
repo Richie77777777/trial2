@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: Raleway;
+    font-weight: 400;
+    text-align: center;
+}
+header{
+    display: flex;
+    justify-content: space-between ;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.menu li{
+    margin: 0 10px;
+    color:  #070439 ;
+    font-weight: 700;
+}
+.logo{
+    width: 85px;
+}
+.first{
+    padding: 8rem 0;
+}
+.illu1{
+    width: 100%;
+}
+.text-area h2{
+    line-height: 38px;
+    font-size: 30px;
+    margin: 28px 0; 
+}
+.text-area p{
+    margin: 20px 0;
+    line-height: 22px;
+}
+.inp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inp input, .inp button{
+    width: 100%;
+    padding: 10px;
+    margin: 7px;
+    border-radius: 2px;
+}
+.inp button{
+    background-color:#1370f1 ;
+    color: white;
+    font-size: 19px;
+    border: none;
+}
+
+
+
+@media only screen and (min-width: 420px ){
+    body{
+        text-align: left;
+        padding: 4rem 6rem;
+    }
+    .logo{
+        width: 120px;
+    }
+    .first{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .illu1{
+        width: 550px;
+    }
+    .text-area{
+        width: 50%;
+    }
+    .inp{
+        flex-direction: row;
+    }
+    .inp input{
+        width: 60%;
+        margin: 0;
+    }
+    .inp button{
+        width: 40%;
+    }
+}
